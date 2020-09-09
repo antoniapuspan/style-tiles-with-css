@@ -13,7 +13,7 @@ use the fonts in other ways in the font hierarchy etc. */
     --bg-color: #313149;
     --link-color: #56CACF;
     --link-hover-color: #E64E33;
-    --color-4: #C4419F;
+    --color-4: #DC429D;
     --color-5: #5F6273;
 
     --primary-font: "Open Sans", sans-serif;
@@ -23,17 +23,15 @@ use the fonts in other ways in the font hierarchy etc. */
     --white-space: 1rem;
 }
 
-button {
-    transition: all 3s;
-}
 
 a {
     transition: all 3s;
 }
 
 button:hover {
-    background-color: var(--link-hover-color);
-    transform: scale(3) rotate(40deg);
+    transform: scale(1.1);
+    
+    
 }
 
 button:active {
@@ -179,29 +177,36 @@ ul li:last-child {
 
 button {
     padding: 1rem;
-    border-radius: 5px;
-    background: var(--link-color);
+   background: var(--link-color);
     text-align: center;
     text-decoration: none;
     font: bold 1.25em/1 var(--primary-font);
     letter-spacing: 1px;
     color: white;
     text-transform: uppercase;
-    text-shadow: 0px -1px 0px #0374a0;
-    transition: all 0.2s ease;
     cursor: pointer;
     margin: 0 1rem 1rem 0;
 }
 
+.primary-button {
+    background-image: linear-gradient(to left, #56CACF, #00D18F);
+    border-radius: 100px;
+}
+
 .secondary-button {
-    background: var(--color-5);
+     border-radius: 40px;
+    
+    background-image: linear-gradient(to right, #E64E33, #C140A5);
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+
 }
 
 button:focus,
 button:active,
 button:focus-within {
     outline: 0;
-    border-radius: 10px;
+    
 }
 
 .typography-main {
@@ -226,7 +231,7 @@ p.typography-sample {
 }
 
 strong {
-    font-weight: bold;
+    font-weight: italic;
 }
 
 em {
